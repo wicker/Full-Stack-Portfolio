@@ -106,4 +106,21 @@
 
 ## Classes/Instances
 
+## CSS
+
+##### Positioning
+
+`Static flow` is the `normal flow`.
+
+`Relative flow` placed `after normal flow` relative to `position in normal flow.`.
+
+`Absolute flow` placed `before normal flow` relative to `parent`.
+
+`Fixed flow` placed `before normal flow` relative to `viewport`.
+
+
+##### 
+
+Parent size calculations ignore float children.
+
 
