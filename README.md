@@ -4,7 +4,7 @@ This one-page website links to webpages I've built using CSS, HTML5, and Javascr
 
 ### View the Site
 
-The site is public at [jennerhanni.net/full-stack-portfolio](http://jenenrhanni.net/full-stack-portfolio/) and the source code is available in the [dist folder](https://github.com/wicker/Full-Stack-Portfolio/tree/master/dist).
+The site is public at [jennerhanni.net/full-stack-portfolio](http://jennerhanni.net/full-stack-portfolio/) and the source code is available in the [dist folder](https://github.com/wicker/Full-Stack-Portfolio/tree/master/dist).
 
 ### View the Site Locally
 
