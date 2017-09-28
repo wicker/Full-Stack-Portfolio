@@ -18,6 +18,7 @@ header {
 .main-image {
   border-radius: 30px;
   border: 2px solid #cfcfcf;
+  width: 100%;
 }
 
 .tile {
