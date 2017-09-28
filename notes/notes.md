@@ -123,4 +123,81 @@
 
 Parent size calculations ignore float children.
 
+# Linux Server Setup Checklist
 
+## Update the System 
+
+`sudo apt-get update`
+
+`sudo apt-get upgrade`
+
+`sudo apt-get autoremove`
+
+`sudo apt-get install finger`
+
+## Create a New User 
+
+`sudo adduser grader`
+
+`usermod -aG sudo grader`
+
+## Generate the Keypair 
+
+`ssh-keygen -t rsa -b 4096`
+
+`vim .ssh/authorized_keys`
+
+`chmod 700 ~/.ssh`
+
+`chmod 644 ~/.ssh/authorized_keys`
+
+## Improve the Security
+
+`sudo vim /etc/ssh/sshd_config`
+
+```
+Port 2200
+PermitRootLogin no
+PasswordAuthentication
+```
+
+`sudo service ssh restart`
+
+`sudo ufw default deny incoming`
+
+`sudo ufw default allow outgoing`
+
+`sudo ufw allow 2200/tcp`
+
+`sudo ufw allow 80/tcp`
+
+`sudo ufw allow 123/tcp`
+
+`sudo ufw enable`
+
+## Test the Login
+
+`ssh grader@courseserver -p 2200`
+
+# Catalog Project Draft README
+
+Server: 45.33.78.30 (Linode)
+
+URL: <coming soon>
+
+Installed Software: 
+
+- libapache2-mod-wsgy-py3
+- postgresql
+- apache2
+- git 
+- nmap
+
+Configurations: 
+
+- See above for security
+
+Third Party Resources
+
+- man pages
+- Stack Ovrflow
